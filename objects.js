@@ -1,4 +1,5 @@
 var playlist = {
+<<<<<<< HEAD
   emimen: "GOd Rap"
 
 };
@@ -26,5 +27,21 @@ var playlist = {
 
  function removeFromPlaylist (playlist, artistName) {
   delete playlist[artistName];
+=======
+  drake: "Nonstop",
+  JayZ: "Lucifer",
+  eminem: "God Rap",
+  lilwayne: "Milli"
+};
+
+function updatePlaylist(playlist, elB, cubalibre) {
+  //Object.assign({}, playlist{ elB: "cubalibre"});//
+  playlist[elB] = "cubalibre";
+  return playlist;
+}
+
+function removeFromPlaylist(playlist, drake) {
+  delete playlist.drake;
+>>>>>>> f8c44a941ee83a6fe16931be673aaa2622adafc1
   return playlist;
 }
